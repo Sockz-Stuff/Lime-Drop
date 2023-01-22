@@ -3,7 +3,8 @@
 //  Lime Drop
 //
 //  Created by Marshall Jones on 1/22/23.
-// kjasdkgasnkgsn
+// 
+//
 
 import SwiftUI
 
@@ -22,5 +23,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewDevice(PreviewDevice(rawValue: "iPhone 14"))
+            .previewDisplayName("iPhone 14")
     }
 }
