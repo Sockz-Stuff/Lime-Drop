@@ -9,8 +9,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var rand1 = 2
+    @State private var rand2 = 2
+    
+    @State private var scoreP = 0
+    @State private var scoreC = 0
+    
+    
     var body: some View {
 
+        
         ZStack{ //layered elements ontop of one another
             Image("background-cloth") //relative to name in Preview Assets
                 .resizable() //makes it stay within the bounds of 100% screen
@@ -24,17 +33,37 @@ struct ContentView: View {
                 Image("logo")
                 Spacer()
                 
+                
                 HStack{
                     Spacer()
-                    Image("card2")
+                    Image("card" + String(rand1)) //calls the image "card<rand1>"
                     Spacer()
-                    Image("card3")
+                    Image("card" + String(rand2))
                     Spacer()
                 }
+                 
                 
                 Spacer()
                 
-                Image("button")
+
+                Button (action: {
+                
+                    //randomize the state properties
+                    self.rand1 = Int.random(in: 2...14)
+                    self.rand2 = Int.random(in: 2...14)
+                    
+                    if(rand1 > rand2){
+                        scoreC+=1
+                    }
+                    else if(rand1 < rand2){
+                        scoreP+=1
+                    }
+            
+                    
+                }) {
+                    Image("button").renderingMode(.original)
+                }.buttonStyle(PlainButtonStyle())
+
                 
                 Spacer()
                 
@@ -42,7 +71,7 @@ struct ContentView: View {
                     VStack{
                         Text("CPU")
                             .padding(.bottom, 10.0)
-                        Text("0")
+                        Text(String(scoreC))
                             .font(.largeTitle)
                     }
                     
@@ -50,7 +79,7 @@ struct ContentView: View {
                         Text("Player")
                             .padding(.bottom, 10.0) //padding example
                             
-                        Text("0")
+                        Text(String(scoreP))
                             .font(.largeTitle)
                     }
                     
