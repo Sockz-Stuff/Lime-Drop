@@ -1,30 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ztg-N6-O2j">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="B0A-RM-HOl">
+        <!--Recipes-->
+        <scene sceneID="Dtu-Rf-z1b">
             <objects>
-                <viewController storyboardIdentifier="Menu" id="2NZ-hY-ZxU" customClass="ViewController" customModule="Lime_Drop" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XOH-9s-4nU">
+                <viewController id="bC8-1a-2FE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="glv-s1-TLS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="a9l-eN-Za0"/>
+                        <viewLayoutGuide key="safeArea" id="j4c-uj-7pO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Recipes" image="fork.knife.circle.fill" catalog="system" selectedImage="fork.knife.circle" id="LjM-b2-rBn"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ojE-td-4CT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h3O-Gv-Ufa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-516" y="-351"/>
+            <point key="canvasLocation" x="-1547" y="584"/>
+        </scene>
+        <!--Add Or Remove-->
+        <scene sceneID="P3q-GL-QZk">
+            <objects>
+                <viewController id="00h-tz-oNn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l5o-Of-JHV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DDH-LF-deN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add Or Remove" selectedImage="plusminus.circle" catalog="system" id="BfV-VU-gBB">
+                        <imageReference key="image" image="plusminus.circle.fill" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AU5-sm-Um3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-670" y="110"/>
+        </scene>
+        <!--My Pantry-->
+        <scene sceneID="Vgk-NM-Kvc">
+            <objects>
+                <viewController id="BpB-5B-C4V" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eO9-eh-ys5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bOR-Tj-5nP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Pantry" image="house.fill" catalog="system" selectedImage="house" id="Qhx-l0-IYU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CUh-k1-Qr6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-599" y="-613"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cI3-4q-T3M">
+            <objects>
+                <tabBarController storyboardIdentifier="mainM" id="ztg-N6-O2j" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zat-1X-fA1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BpB-5B-C4V" kind="relationship" relationship="viewControllers" id="WUs-BH-RpO"/>
+                        <segue destination="00h-tz-oNn" kind="relationship" relationship="viewControllers" id="d99-8B-4l0"/>
+                        <segue destination="bC8-1a-2FE" kind="relationship" relationship="viewControllers" id="LDA-Se-3gA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="86Z-Yq-K0a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1575" y="-193"/>
         </scene>
     </scenes>
     <resources>
+        <image name="fork.knife.circle" catalog="system" width="128" height="123"/>
+        <image name="fork.knife.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="plusminus.circle" catalog="system" width="128" height="123"/>
+        <image name="plusminus.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

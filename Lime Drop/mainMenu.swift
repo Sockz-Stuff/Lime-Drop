@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct mainMenu: View {
     var body: some View {
-        TabView{
+        
+        storyboardview().edgesIgnoringSafeArea(.all)
+        
+       /* TabView{
             quenView()
                 .tabItem{
                     Label("My Pantry", systemImage: "house")
@@ -23,7 +27,8 @@ struct mainMenu: View {
                     Label("Recipe Generator", systemImage: "fork.knife")
                 }
             
-        }
+        }*/
+        
     }
 }
 
@@ -31,4 +36,15 @@ struct mainMenu_Previews: PreviewProvider {
     static var previews: some View {
         mainMenu()
     }
+}
+
+struct storyboardview: UIViewControllerRepresentable{
+    
+    func makeUIViewController(context: Context) ->UIViewController{
+        let storboard = UIStoryboard(name: "Storyboard", bundle: Bundle.main)
+        let controller = storboard.instantiateViewController(identifier: "mainM")
+        return controller
+    }
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
+    
 }
