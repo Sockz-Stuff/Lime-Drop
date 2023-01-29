@@ -12,11 +12,15 @@ struct mainMenu: View {
         TabView{
             quenView()
                 .tabItem{
-                    Label("Queen", systemImage: "list.dash")
+                    Label("My Pantry", systemImage: "house")
                 }
             aceView()
                 .tabItem{
-                    Label("Ace", systemImage: "square.and.pencil")
+                    Label("Add/Remove", systemImage: "plusminus")
+                }
+            jackView()
+                .tabItem{
+                    Label("Recipe Generator", systemImage: "fork.knife")
                 }
             
         }
