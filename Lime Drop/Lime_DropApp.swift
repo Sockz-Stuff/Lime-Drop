@@ -11,7 +11,13 @@ import SwiftUI
 struct Lime_DropApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            mainMenu()
         }
+    }
+}
+
+struct Previews_Lime_DropApp_Previews: PreviewProvider {
+    static var previews: some View {
+        Text("Hue hue hue")
     }
 }
