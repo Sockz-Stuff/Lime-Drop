@@ -50,14 +50,59 @@
                     <view key="view" contentMode="scaleToFill" id="eO9-eh-ys5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6S1-Z1-xxW">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNW-Bf-BR7">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJb-Cy-SsG">
+                                                <rect key="frame" x="0.0" y="3" width="393" height="111"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" titleAlignment="leading">
+                                                    <backgroundConfiguration key="background" image="shelf"/>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Meats">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="3" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="LNN-2a-XyO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qNW-Bf-BR7" secondAttribute="trailing" id="5vu-uO-1vq"/>
+                                    <constraint firstItem="qNW-Bf-BR7" firstAttribute="width" secondItem="6S1-Z1-xxW" secondAttribute="width" id="DX2-tv-pR8"/>
+                                    <constraint firstItem="qNW-Bf-BR7" firstAttribute="leading" secondItem="6S1-Z1-xxW" secondAttribute="leading" id="Nb0-uq-Qcz"/>
+                                    <constraint firstItem="qNW-Bf-BR7" firstAttribute="bottom" secondItem="6S1-Z1-xxW" secondAttribute="bottom" id="PW3-R0-XpV"/>
+                                    <constraint firstItem="qNW-Bf-BR7" firstAttribute="leading" secondItem="6S1-Z1-xxW" secondAttribute="leading" id="big-aA-yM6"/>
+                                    <constraint firstItem="qNW-Bf-BR7" firstAttribute="top" secondItem="6S1-Z1-xxW" secondAttribute="top" id="ecZ-DX-TrV"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="bOR-Tj-5nP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6S1-Z1-xxW" firstAttribute="top" secondItem="bOR-Tj-5nP" secondAttribute="top" id="gmH-Zu-djR"/>
+                            <constraint firstItem="6S1-Z1-xxW" firstAttribute="bottom" secondItem="bOR-Tj-5nP" secondAttribute="bottom" id="jGk-UP-gk8"/>
+                            <constraint firstItem="6S1-Z1-xxW" firstAttribute="trailing" secondItem="bOR-Tj-5nP" secondAttribute="trailing" id="oJ9-Vn-mvT"/>
+                            <constraint firstItem="6S1-Z1-xxW" firstAttribute="leading" secondItem="bOR-Tj-5nP" secondAttribute="leading" id="vhF-Pw-6eV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Pantry" image="house.fill" catalog="system" selectedImage="house" id="Qhx-l0-IYU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CUh-k1-Qr6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-599" y="-613"/>
+            <point key="canvasLocation" x="-802.29007633587787" y="-1082.3943661971832"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="cI3-4q-T3M">
@@ -86,6 +131,7 @@
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="plusminus.circle" catalog="system" width="128" height="123"/>
         <image name="plusminus.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="shelf" width="160" height="160"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
