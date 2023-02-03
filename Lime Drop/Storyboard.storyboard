@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ztg-N6-O2j">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Recipes-->
+        <scene sceneID="Dtu-Rf-z1b">
+            <objects>
+                <viewController id="bC8-1a-2FE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="glv-s1-TLS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="j4c-uj-7pO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Recipes" image="fork.knife.circle.fill" catalog="system" selectedImage="fork.knife.circle" id="LjM-b2-rBn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h3O-Gv-Ufa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1547" y="584"/>
+        </scene>
+        <!--Add Or Remove-->
+        <scene sceneID="P3q-GL-QZk">
+            <objects>
+                <viewController id="00h-tz-oNn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l5o-Of-JHV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ingredient Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hXD-U8-hbi">
+                                <rect key="frame" x="16" y="115" width="368" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="separatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Amount" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="dCY-Ao-e1J">
+                                <rect key="frame" x="16" y="179" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="separatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="STb-fd-7XS">
+                                <rect key="frame" x="-99" y="219" width="369" height="95"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="plus.app.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Jyo-yf-FHy">
+                                <rect key="frame" x="315" y="224.66666666666663" width="52" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="separatorColor"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3n-Bo-MQC">
+                                <rect key="frame" x="328" y="262" width="24" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Berries" translatesAutoresizingMaskIntoConstraints="NO" id="Jfw-KR-Ujw">
+                                <rect key="frame" x="-16" y="369" width="424" height="463"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="minus.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qB8-3k-kR0">
+                                <rect key="frame" x="315" y="297.66666666666663" width="54" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="separatorColor"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STQ-bd-puO">
+                                <rect key="frame" x="318" y="316" width="48" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DDH-LF-deN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add Or Remove" selectedImage="plusminus.circle" catalog="system" id="BfV-VU-gBB">
+                        <imageReference key="image" image="plusminus.circle.fill" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AU5-sm-Um3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-670.99236641221376" y="109.85915492957747"/>
+        </scene>
+        <!--My Pantry-->
+        <scene sceneID="Vgk-NM-Kvc">
+            <objects>
+                <viewController id="BpB-5B-C4V" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eO9-eh-ys5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6S1-Z1-xxW">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNW-Bf-BR7">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJb-Cy-SsG">
+                                                <rect key="frame" x="0.0" y="3" width="393" height="111"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" titleAlignment="leading">
+                                                    <backgroundConfiguration key="background" image="shelf"/>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Meats">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="3" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="LNN-2a-XyO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qNW-Bf-BR7" secondAttribute="trailing" id="5vu-uO-1vq"/>
+                                    <constraint firstItem="qNW-Bf-BR7" firstAttribute="width" secondItem="6S1-Z1-xxW" secondAttribute="width" id="DX2-tv-pR8"/>
+                                    <constraint firstItem="qNW-Bf-BR7" firstAttribute="leading" secondItem="6S1-Z1-xxW" secondAttribute="leading" id="Nb0-uq-Qcz"/>
+                                    <constraint firstItem="qNW-Bf-BR7" firstAttribute="bottom" secondItem="6S1-Z1-xxW" secondAttribute="bottom" id="PW3-R0-XpV"/>
+                                    <constraint firstItem="qNW-Bf-BR7" firstAttribute="leading" secondItem="6S1-Z1-xxW" secondAttribute="leading" id="big-aA-yM6"/>
+                                    <constraint firstItem="qNW-Bf-BR7" firstAttribute="top" secondItem="6S1-Z1-xxW" secondAttribute="top" id="ecZ-DX-TrV"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bOR-Tj-5nP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6S1-Z1-xxW" firstAttribute="top" secondItem="bOR-Tj-5nP" secondAttribute="top" id="gmH-Zu-djR"/>
+                            <constraint firstItem="6S1-Z1-xxW" firstAttribute="bottom" secondItem="bOR-Tj-5nP" secondAttribute="bottom" id="jGk-UP-gk8"/>
+                            <constraint firstItem="6S1-Z1-xxW" firstAttribute="trailing" secondItem="bOR-Tj-5nP" secondAttribute="trailing" id="oJ9-Vn-mvT"/>
+                            <constraint firstItem="6S1-Z1-xxW" firstAttribute="leading" secondItem="bOR-Tj-5nP" secondAttribute="leading" id="vhF-Pw-6eV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Pantry" image="house.fill" catalog="system" selectedImage="house" id="Qhx-l0-IYU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CUh-k1-Qr6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-802.29007633587787" y="-1082.3943661971832"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cI3-4q-T3M">
+            <objects>
+                <tabBarController storyboardIdentifier="mainM" id="ztg-N6-O2j" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zat-1X-fA1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BpB-5B-C4V" kind="relationship" relationship="viewControllers" id="WUs-BH-RpO"/>
+                        <segue destination="00h-tz-oNn" kind="relationship" relationship="viewControllers" id="d99-8B-4l0"/>
+                        <segue destination="bC8-1a-2FE" kind="relationship" relationship="viewControllers" id="LDA-Se-3gA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="86Z-Yq-K0a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1575" y="-193"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Berries" width="466" height="371"/>
+        <image name="fork.knife.circle" catalog="system" width="128" height="123"/>
+        <image name="fork.knife.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="minus.square.fill" catalog="system" width="128" height="114"/>
+        <image name="plus.app.fill" catalog="system" width="128" height="114"/>
+        <image name="plusminus.circle" catalog="system" width="128" height="123"/>
+        <image name="plusminus.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="shelf" width="160" height="160"/>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
