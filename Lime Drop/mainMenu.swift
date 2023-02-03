@@ -11,9 +11,9 @@ import UIKit
 struct mainMenu: View {
     var body: some View {
         
-        storyboardview().edgesIgnoringSafeArea(.all)
+        //storyboardview().edgesIgnoringSafeArea(.all)
         
-       /* TabView{
+        TabView{
             quenView()
                 .tabItem{
                     Label("My Pantry", systemImage: "house")
@@ -27,7 +27,7 @@ struct mainMenu: View {
                     Label("Recipe Generator", systemImage: "fork.knife")
                 }
             
-        }*/
+        }
         
     }
 }
