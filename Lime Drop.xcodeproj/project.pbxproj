@@ -11,7 +11,6 @@
 		74812D83298711D200662F4A /* quenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74812D82298711D200662F4A /* quenView.swift */; };
 		74812D85298711E700662F4A /* aceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74812D84298711E700662F4A /* aceView.swift */; };
 		74812D8C29871AFC00662F4A /* jackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74812D8B29871AFC00662F4A /* jackView.swift */; };
-		74812D90298724DC00662F4A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74812D8F298724DB00662F4A /* Storyboard.storyboard */; };
 		74812D922987254800662F4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74812D912987254800662F4A /* ViewController.swift */; };
 		74A9A9B1297DCED200D5369A /* Lime_DropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A9A9B0297DCED200D5369A /* Lime_DropApp.swift */; };
 		74A9A9B5297DCED200D5369A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74A9A9B4297DCED200D5369A /* Assets.xcassets */; };
@@ -46,7 +45,6 @@
 		74812D892987136400662F4A /* mainview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainview.swift; sourceTree = "<group>"; };
 		74812D8A2987136400662F4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		74812D8B29871AFC00662F4A /* jackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jackView.swift; sourceTree = "<group>"; };
-		74812D8F298724DB00662F4A /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		74812D912987254800662F4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74A9A9AD297DCED200D5369A /* Lime Drop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lime Drop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A9A9B0297DCED200D5369A /* Lime_DropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lime_DropApp.swift; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 				74812D8B29871AFC00662F4A /* jackView.swift */,
 				74812D84298711E700662F4A /* aceView.swift */,
 				74812D82298711D200662F4A /* quenView.swift */,
-				74812D8F298724DB00662F4A /* Storyboard.storyboard */,
 				74A9A9B4297DCED200D5369A /* Assets.xcassets */,
 				74A9A9B9297DCED200D5369A /* Lime_Drop.entitlements */,
 				74A9A9B6297DCED200D5369A /* Preview Content */,
@@ -264,7 +261,6 @@
 			files = (
 				74A9A9B8297DCED200D5369A /* Preview Assets.xcassets in Resources */,
 				74A9A9B5297DCED200D5369A /* Assets.xcassets in Resources */,
-				74812D90298724DC00662F4A /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
